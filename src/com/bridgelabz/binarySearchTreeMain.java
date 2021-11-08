@@ -16,5 +16,6 @@ public class binarySearchTreeMain {
         binarySearchTree.insert(65);
         binarySearchTree.insert(63);
         binarySearchTree.insert(67);
+        System.out.println(binarySearchTree.search(63));
     }
 }

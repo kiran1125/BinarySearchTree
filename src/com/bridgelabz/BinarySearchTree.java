@@ -29,6 +29,25 @@ public class BinarySearchTree {
         return node;
     }
 
+    public boolean search(int data) {
+        return searchInTheTree(root,data);
+    }
+
+    private boolean searchInTheTree(TreeNode node, int data) {
+        if(node == null){
+            return false;
+        }
+        else if (node.data==data){
+            return true;
+        }
+        else if (data < node.data){
+            return searchInTheTree(node.left,data);
+        }
+        else
+            return searchInTheTree(node.right , data);
+    }
+
+
     /**
      * Create a TreeNode
      */
